@@ -1,0 +1,71 @@
+import { useState } from "react";
+import {StyleSheet, Text, View, Button, Alert}from "react-native";
+
+export default function App() {
+  const[pantallaActual, setPantallaActual] = useState('registro1');
+
+  const [nombre, setNombre] = useState('');
+  const [correo, setCorreo]= useState('');
+  const [telefono, setTelefono]= useState('');
+  const [password, setPassword]= useState('');
+  
+  if (pantallaActual === 'bienvenida'){
+    return(
+      <View style={styles.containerCentrado}>
+        <Text style={styles.titulo}>!Bienvenido!,{nombre}</Text>
+        <Text style={styles.subtitulo}>Tu registro ha sido exitoso</Text>
+
+        <View style={styles.botonEspacio}>
+          <Button title="Volver al registro" onPress={() => (iniciarNuevoRegistro)color='blue'}/>
+
+
+        </View>
+      </View>
+    )
+  }
+
+  const validarRegistro = () => {
+    if(!nombre.trim() || !correo.trim() || !telefono.trim() || !password.trim()) {
+      Alert.alert('Error', 'Por favor, complete todos los campos');
+      return;
+    }
+
+     if (telefono.length !== 10 ){
+      Alert.alert('Error', 'El número de teléfono debe tener 10 dígitos');
+      return;
+    }
+
+    if(!correo.includes('@') || !correo.includes('.com')){
+      Alert.alert('Error', 'Por favor, ingrese un correo electrónico válido');
+      return;
+    }
+
+    if (password.length < 6){
+      Alert.alert('Error', 'La contraseña debe tener al menos 6 caracteres');
+      return;
+    }
+
+    Alert.alert(
+      'Registro exitoso', 
+      `Hola ${nombre}, tu registro ha sido exitoso`
+      [
+        {
+         text: 'Continuar',
+         onPress: () => setPantallaActual('registro')
+
+      }
+      ]
+
+
+  
+    )
+
+  }
+}
+
+return (
+  <View style={styles.contenedor}>
+    <Text sty></Text>
+
+  </View>
+)
