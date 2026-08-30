@@ -5,24 +5,27 @@ import * as Location from 'expo-location';
 
 const CIUDADES_PRUEBA = [
   { nombre: 'Local (GPS)', lat: null, lon: null },
-  // Base McMurdo
-  { nombre: 'Antártida', lat: -77.8463, lon: 166.6682 },
-  // EE.UU: El lugar más caluroso del mundo. 
-  { nombre: 'Valle de la Muerte', lat: 36.4500, lon: -116.8721 },
-  // India: El lugar más lluvioso del planeta (Monzones). 
-  { nombre: 'Cherrapunji', lat: 25.2702, lon: 91.7323 },
-  // Venezuela: Capital mundial de los relámpagos. 
-  { nombre: 'Maracaibo', lat: 9.7457, lon: -71.5587 },
-  // China: El mágico "Mar de Nubes".
-  { nombre: 'Huangshan', lat: 30.1265, lon: 118.1733 }, 
-  // Tórshavn: Uno de los lugares más nublados y oscuros del mundo.
-  { nombre: 'Islas Feroe', lat: 62.0014, lon: -6.7662 }, 
-  // Nepal: Altitud extrema. 
-  { nombre: 'Everest', lat: 27.9881, lon: 86.9250 },
-  // Calidad de Aire Peligrosa 
-  { nombre: 'Nueva Delhi', lat: 28.6139, lon: 77.2090 },
-  // Calidad de Aire Excelente
-  { nombre: 'Reikiavik', lat: 64.1466, lon: -21.9426 },
+  //Japon:una de las ciudades con mas nieve en el mundo 
+  { nombre: 'Aomori', lat: 40.8222, lon: 140.7474 },
+  // Italia:fue una ciudad romana que quedo sepultada por una erupcion de volcan 
+  { nombre: 'Pompeya', lat: 40.7485, lon: 14.4849},
+  //Rusia: una de las ciudades mas grandes construidas sobre permafrost permanente   
+  { nombre: 'Yakutsk', lat: 62.0278, lon: 129.7319 },
+  //EU : ciudad con mas millonarios 
+  { nombre: 'Nueva York', lat: 40.7128, lon: -74.0060 },
+  //Honk kong : lugar con mas rascacielos 
+  { nombre: 'Hong Kong', lat: 22.3193, lon: 114.1694 },
+  // Brasil:puerta de entrada de la selva amazonica 
+  { nombre: 'Manaos', lat: -3.1190, lon: -60.0217 },
+  //Noruega: durante el verano, el Sol puede permanecer sobre el horizonte durante meses
+  { nombre: 'Longyearbyen', lat: 78.2232, lon: 15.6469 },
+  //Egipto:lugar donde goberno cleopatra
+  { nombre: 'Alejandría', lat: 31.2001, lon: 29.9187 },
+  //Mexico: una de las ciudades mas calurosas de Mexico
+  { nombre: 'Mexicali', lat: 32.6245, lon: -115.4523 },
+  //Marruecos: ciudad cerna a al desierto del Sahara
+  { nombre: 'Marrakech', lat: 31.6295, lon: -7.9811 }
+
 ];
 
 export default function App() {
