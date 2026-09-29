@@ -13,12 +13,12 @@ import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 // copialas de la consola web de firebase (paso 4 de las instrucciones).
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCYZWUAL6MjkCVsG7dWwfgiPIoq0Gb2bxg",
-  authDomain: "practica12-auth-15de3.firebaseapp.com",
-  projectId: "practica12-auth-15de3",
-  storageBucket: "practica12-auth-15de3.firebasestorage.app",
-  messagingSenderId: "18355787096",
-  appId: "1:18355787096:web:da7c21e25c1a3e1d9f012d"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 // =========================================================
 
